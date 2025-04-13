@@ -1,0 +1,423 @@
+:root{
+    --text-color:white;
+    --link-color:skyblue;
+    --background-color: rgb(10, 10, 71);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    padding: 0px 50px;
+}
+.right ul li{
+    display: inline;
+    transition: .1s;
+}
+.right ul li:hover{
+    color: grey;
+    font-size: 20px;
+}
+nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+    font-family:'poppins','sans';
+    transition: .1s;
+}
+nav .left a:hover{
+    color: grey;
+    font-size: 25px;
+}
+nav .right ul li{
+    margin: 0px 10px;
+    color: var(--text-color);
+
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(10, 10, 71,0.9);
+}
+
+/* SEction for photo and text */
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 40px;
+    background-color: var(--background-color);
+}
+
+.hero .text{
+    flex: 5;
+    
+}
+.hero .text p{
+    flex: 5;
+    color: var(--text-color);
+    
+}
+.hero .text h2{
+    font-size: 45px;
+    color: var(--text-color);
+    margin-bottom: 50px;
+    font-family:'poppins','sans';
+    
+}
+.photo{
+    flex: 2;
+    
+}
+ .hero .photo img{
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: 70px;
+    background-size: contain;
+}
+
+
+.hero-2{
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+
+    
+}
+#horizontal-line{
+    width: 1000px;
+    height: 1px;
+    border: 1px solid silver;
+    border-radius: 2px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
+}
+
+/*section - skills */
+
+.skills{
+    padding:0px 50px;
+    margin-bottom: 100px;
+    background-color: var(--background-color);
+    
+    
+}
+.skills h2{
+    text-align: center;
+    font-size: 35px;
+    color: var(--text-color);
+    font-family: 'poppins';
+    
+}
+.skills ul{
+align-items: center;
+margin-left: 0px
+
+}
+.skills ul li{
+    color: var(--text-color);
+    margin-top: 20px;
+}
+
+
+
+
+.skills .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skills .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 10px;
+    margin: 10px;
+    color: var(--text-color);
+    margin-top: 50px;
+    gap: 10px;
+   
+}
+.skills .cells .cell:hover{
+    border: 1px solid skyblue;
+}
+.skills .cells .cell span:hover{
+    color: skyblue;
+    font-size: 20px;
+   
+}
+.skills .cells .cell span{
+    font-size: 18px;
+}
+.skills .cells .cell img{
+   width: 30px;
+   height: 30px;
+   object-fit: contain;
+   border-radius: 2px;
+   
+}
+.line{
+    display: flex;
+    justify-content: center;
+}
+ .line #horizontal-line-2{
+    width: 1000px;
+    height: 1px;
+    border: 1px solid silver;
+    border-radius: 2px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+   
+
+}
+/*section - contact*/
+.contact{
+    padding: 0px 50px;
+    margin-top: -100px;
+    
+}
+.contact h2{
+    font-size: 35px;
+    margin-top: 50px;
+    position: absolute;
+    font-family: 'poppins',sans-serif;
+    
+}
+.contact .group{
+    display: flex;
+    gap: 50px;
+}
+.contact .group .texts{
+    flex: 3;
+    margin-top: 20px;
+    margin-top: 140px;
+
+}
+.contact .group form{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+
+
+}
+.contact .group form input,
+.contact .group form textarea{
+    font-family: 'poppins',sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 10px;
+    margin-bottom: 15px;
+    resize: none;
+    outline: none;
+
+}
+button{
+    background-color: rgb(10, 10, 71);;
+    color: white;
+    font-family: 'poppins',sans-serif;
+    border: 2px solid var(--link-color);
+    padding: 10px;
+    margin-bottom: 15px;
+    height: 50px;
+    cursor: pointer;
+    width: 150px;
+    border-radius: 10px;
+   
+}
+button:hover{
+    color: black;
+    border: 2px solid skyblue;
+    background-color: skyblue;
+}
+
+.contact{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    position: static;
+}
+
+
+.footer{
+    background-color: black;
+    height: 150px;
+}
+
+.logo ul{
+    display: flex;
+    justify-content: center;
+
+   
+}
+.logo ul li{
+    margin:  20px 10px;
+}
+.logo p{
+    color: white;
+    font-family: 'poppin',sans-serif;
+    justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:740px){
+    .hero{
+        flex-direction: column-reverse;
+    }
+
+    .skills .cells .cell {
+        margin: 10px;
+    }
+    /*section - contact*/
+    .contact .group{
+        flex-direction: column;
+    }
+    .contact .group form{
+        margin-top: 0px;
+    }
+}
+@media (max-width:600px){
+    /*nav responsive*/
+    nav{
+        padding: 0px 20px;
+    }
+    nav .left a{
+        
+    font-size: 20px;
+    font-weight: 200;
+    }
+/*section hero 1*/
+.hero{
+    padding: 0px 20px;
+}
+
+/*section hero 2*/
+.skills{
+    align-items: self-start;
+    
+   
+    
+}
+.skills h2{
+    margin-left: 0px;
+}
+.skills .cells .cell{
+    margin: 10px;
+}
+.skills .cells .cell span{
+    font-size: 16px;
+}
+.skills ul {
+    margin-left: -10px;
+}
+
+.line #horizontal-line-2{
+    display: none;
+}
+
+
+
+}
+
+@media (max-width:1088px){
+    #horizontal-line{
+        width: 750px;
+        height: 1px;
+        border: 1px solid silver;
+        margin-top: 10px;
+        
+
+    }
+    .hero{
+        padding: 0px 20px;
+    }
+    
+    /*section hero 2*/
+    .skills{
+        align-items: self-start;
+    }
+    .skills h2{
+        margin-left: 0px;
+    }
+    .skills .cells .cell span{
+        font-size: 16px;
+    }
+    .skills ul {
+        margin-left: -10px;
+    }
+    
+
+
+
+
+
+}
+@media (max-width:505px){
+    #horizontal-line{
+        width: 290px;
+        height: 1px;
+        border: 1px solid silver;
+        margin-top: 10px;
+        display: none;
+
+
+    }
+
+    .line #horizontal-line-2{
+        display: none;
+    }
+
+
+    .skills .cells .cell {
+        margin: 10px;
+    }
+}
+
+@media (max-width:800px){
+    .hero .text h2{
+        font-size: 32px;
+    }
+    #horizontal-line{
+        width: 500px;
+        height: 1px;
+        border: 1px solid silver;
+        margin-top: 10px;
+
+    }
+    .skills .cells .cell{
+        margin: 10px;
+    }
+    
+
