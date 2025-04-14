@@ -25,11 +25,12 @@ nav{
     justify-content: space-between;
     height: 80px;
     align-items: center;
-    padding: 0px 50px;
+    padding: 0px 50px;   
 }
 .right ul li{
     display: inline;
     transition: .1s;
+    cursor: pointer;
 }
 .right ul li:hover{
     color: grey;
@@ -421,3 +422,4 @@ button:hover{
     }
     
 
+}
